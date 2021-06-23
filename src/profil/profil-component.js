@@ -1,4 +1,5 @@
 import React, { Children } from 'react';
+import PropTypes from "prop-types";
 
 
 
@@ -22,8 +23,14 @@ function Profilcomponent(props) {
     
 }
 Profilcomponent.defaultProps={
-    FullName:"Albert Einstein",
+    name:"Albert Einstein",
     Bio:"(born March 14, 1879, Ulm, Württemberg, Germany—died April 18, 1955, Princeton, New Jersey, U.S.), German-born physicist who developed the special and general theories of relativity and won the Nobel Prize for Physics in 1921 for his explanation of the photoelectric effect",
-     Profession:"Physicist"
-}
+     
+};
+Profilcomponent.propTypes = {
+    name: PropTypes.string,
+    bio: PropTypes.string,
+    HandleName: PropTypes.func,
+    children:PropTypes.element
+  };
 export default Profilcomponent
