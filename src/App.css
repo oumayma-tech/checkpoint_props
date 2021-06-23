@@ -40,7 +40,7 @@ body {
   font-family: 'Rasa', serif;
   font-weight: 300;
   margin: 0;
-  background-color: burlywood;
+  background-color: #2f4f3e59;
 }
 h1,
 h2,
@@ -190,7 +190,7 @@ footer {
 .btn1{
   
   position: absolute;
-  margin-top: -1%;
+  margin-top: 0%;
     margin-left: -76%;
 }
 .btn1:hover{
@@ -206,5 +206,9 @@ footer {
   border-radius: 1px;
   
 
+}
+.phy{
+  margin-left: 50px;
+  margin-top: -18px;
 }
 
